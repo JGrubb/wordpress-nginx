@@ -116,7 +116,7 @@ replace** the indicated address by **your** address.
 
 ## Installation
 
-   1. Move the old `/etc/nginx` directory to `/etc/nginx.old`.
+   1. Move the old `/usr/local/nginx/conf` directory to `/usr/local/nginx/conf.old`.
    
    2. Clone the git repository from github:
    
@@ -177,12 +177,12 @@ replace** the indicated address by **your** address.
       by editing `upstream_phpcgi.conf`.
    
    
-   5. Create the `/etc/nginx/sites-enabled` directory and enable the
+   5. Create the `/usr/local/nginx/conf/sites-enabled` directory and enable the
       virtual host using one of the methods described below.
 
       Note that if you're using the
       [nginx_ensite](http://github.com/perusio/nginx_ensite) script
-      described below it **creates** the `/etc/nginx/sites-enabled`
+      described below it **creates** the `/usr/local/nginx/conf/sites-enabled`
       directory if it doesn't exist the first time you run it for
       enabling a site.    
 
@@ -193,7 +193,7 @@ replace** the indicated address by **your** address.
    7. Check that WordPress is working by visiting the configured site
       in your browser.
    
-   8. Remove the `/etc/nginx.old` directory.
+   8. Remove the `/usr/local/nginx/conf.old` directory.
    
    9. Done.
    
